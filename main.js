@@ -20,8 +20,8 @@ function modelloaded(){
 function GotPoses(result){
     if(result.length > 0){
     console.log(result);
-    noseX = resut[0].pose.nose.x;
-    noseY = resut[0].pose.nose.y;
+    noseX = result[0].pose.nose.x;
+    noseY = result[0].pose.nose.y;
     rightwristX = result[0].pose.rightWrist.x;
     leftwristX = result[0].pose.leftWrist.x;
     difference = floor(leftwristX - rightwristX);
